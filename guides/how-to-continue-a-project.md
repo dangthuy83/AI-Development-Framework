@@ -4,6 +4,40 @@
 
 Dùng khi quay lại sau một lần pause, handover, đổi Agent hoặc nhiều ngày không làm việc. Chat memory chỉ là supporting context; filesystem và Project Workspace mới quyết định current state.
 
+## Standard Continue Session Prompt
+
+Dùng prompt này để Agent tự khôi phục current state từ Project Workspace thay vì yêu cầu người dùng kể lại toàn bộ session cũ:
+
+```text
+Tiếp tục project bằng AI Development Framework.
+
+Project root hoặc accessible files: [PROJECT_PATH_OR_FILES]
+Direct request hiện tại: [REQUEST]
+Framework path/version: [REFERENCE nếu có]
+Permission boundary: [read/write/commands/external actions]
+
+1. Xác minh project target, filesystem/Git state hoặc freshness của files được
+   cung cấp. Không dựa vào chat memory làm SSOT.
+2. Đọc AI Working, Knowledge Management và Security Standards; Session
+   Workflow; project README.md, WORKING_CONTEXT.md, TASKS.md và AGENTS.md.
+   Từ active work, đọc relevant Product/Design/Decision sources.
+3. Lập Session Contract gồm Objective, Scope, Constraints và Deliverables;
+   xác định Intent/dependencies, Acceptance Criteria, Verification
+   Requirements, allowed updates và completion protocol.
+4. Báo conflict, gap, divergence, staleness, missing permission và capability
+   limitation. Same-authority conflict hoặc missing required source phải dừng.
+5. Trước edit/command/side effect, trình current-state summary, read set,
+   proposed actions và approval gates. Không mặc nhiên tái sử dụng approval của
+   session trước.
+6. Chỉ thực hiện sau khi action nằm trong permission hiện hành; dùng Prompt
+   Template theo Intent thay vì biến prompt này thành implement/fix/review
+   instruction chung.
+7. Kết thúc bằng actual evidence, owner updates, Close Session Checklist và
+   status completed, partial, blocked, failed hoặc skipped.
+```
+
+Prompt này là continuation entry aid, không thay [Continue Session Prompt Template](../global-workspace/templates/prompts/continue-session.md), Session Workflow hoặc project owner sources.
+
 ## Quy trình
 
 1. Đọc [continue-session prompt](../global-workspace/templates/prompts/continue-session.md), [Session Workflow](../global-workspace/workflows/session-workflow.md) và Open Session Checklist.

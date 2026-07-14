@@ -4,6 +4,35 @@
 
 Cline là coding-agent surface gắn với workspace/editor. Cline có thể nhận workspace rules và hỗ trợ `AGENTS.md`; checkpoints có thể lưu file snapshots, nhưng không thay Git, Project Workspace hoặc verification. Xem [Cline Rules](https://docs.cline.bot/customization/cline-rules) và [Checkpoints](https://docs.cline.bot/core-workflows/checkpoints).
 
+## Cline Work Session Entry Prompt
+
+```text
+Làm việc với project này bằng AI Development Framework trên Cline.
+
+Project root: [PROJECT_PATH]
+Direct request: [REQUEST]
+Authorized files/actions: [SCOPE]
+Auto-approve policy hiện tại: [POLICY_OR_UNKNOWN]
+
+1. Inventory workspace, Git state, AGENTS.md, nested/project/editor rule sources
+   và capability hiện có trước edit.
+2. Nếu nhiều rule sources cùng áp dụng, báo mapping/conflict; không dùng tool
+   precedence để silent override Framework hoặc Project authority.
+3. Lập Session Contract, Intent/dependencies, read set, deliverables,
+   Acceptance Criteria, Verification Requirements và allowed updates.
+4. Auto-approve chỉ là tool setting, không phải authority cho dependency,
+   network, destructive/external/database hoặc secret access. Trình approval
+   gate trước các action này.
+5. Checkpoint là file-state safety aid, không thay Git, test evidence hoặc
+   permission; restore checkpoint là destructive state change cần target review.
+6. Chỉ thực hiện bounded changes trong scope, review diff và chạy commands đã
+   được phép/verified. Không claim check chưa chạy.
+7. Cập nhật đúng owner và báo tool actions, checkpoints, files, evidence,
+   limitations cùng status completed/partial/blocked/failed/skipped.
+```
+
+Chọn Prompt Template theo Intent sau entry. Prompt này không cấp broad auto-approval và không biến checkpoint/conversation thành durable Project Knowledge.
+
 ## Capability profile
 
 | Capability | Cách dùng | Limitation/fallback |
