@@ -7,7 +7,7 @@
 
 - Phiên bản đặc tả: 0.3
 - Phiên bản package candidate: 1.0.0-rc.1
-- Trạng thái: Roadmap item 10 — Completed; `1.0.0-rc.1` release-ready, chưa tag hoặc publish và chưa phải stable release
+- Trạng thái: Roadmap item 10 — Completed; `1.0.0-rc.1` release-ready và chưa phải stable release; trạng thái tag/publish được xác định từ Git/GitHub release record
 - Ngôn ngữ tài liệu: Tiếng Việt
 
 ---
@@ -4199,7 +4199,7 @@ Independent validation xác nhận 9/9 files, ownership, internal links/anchors,
 
 Roadmap item Pilot áp dụng Framework cho một dự án cá nhân đủ evidence chuyển sang `Completed`. Completion này chứng minh migration và documentation workflow hoạt động trên một project thật với legacy knowledge, security boundary, submodule dependency và technical restore/build baseline.
 
-Pilot không tự chứng minh cross-Agent equivalence, runtime/database behavior, frontend Visual QA hoặc Framework v1 release readiness. Package version/release note và limitation/fallback evidence cho ChatGPT, Cline và Claude đã được xác định cho RC1. Independent diff review, Documentation Review và Release/Handover Checklist đã đạt; Roadmap item Review và hoàn thiện Framework v1 đã hoàn tất. Kết quả xác nhận `1.0.0-rc.1` release-ready nhưng không tự cấp quyền hoặc tuyên bố Git tag/publish đã thực hiện.
+Pilot không tự chứng minh cross-Agent equivalence, runtime/database behavior, frontend Visual QA hoặc Framework v1 release readiness. Package version/release note và limitation/fallback evidence cho ChatGPT, Cline và Claude đã được xác định cho RC1. Independent diff review, Documentation Review và Release/Handover Checklist đã đạt; Roadmap item Review và hoàn thiện Framework v1 đã hoàn tất. Kết quả xác nhận `1.0.0-rc.1` release-ready; Git tag/publish là release action riêng và trạng thái thực tế phải được xác định từ Git/GitHub release record.
 
 Release Candidate `1.0.0-rc.1` xác định Codex là Agent surface đã có validation thực tế trong phạm vi Pilot LabelPrint. ChatGPT, Cline và Claude được giữ như future-ready documented surfaces: Guides mô tả capability, limitation và fallback để có thể áp dụng trong tương lai, nhưng các surface này chưa được Framework validation thực tế và không được gọi là validated hoặc equivalent trong RC1. Trạng thái này đáp ứng nhánh limitation/fallback của F-024 mà không biến cross-Agent testing thành release dependency của RC1.
 
@@ -5002,7 +5002,7 @@ Roadmap này quản lý việc hoàn thiện Documentation & Template Framework.
 | 9 | Pilot áp dụng Framework cho một dự án cá nhân | Completed |
 | 10 | Review và hoàn thiện Framework v1 | Completed |
 
-`Project Workspace Template Package`, `Standards và Checklists Package`, `AI Workflow và Prompt Template Package`, `Frontend Design Workflow và Impeccable Integration`, `Usage Guides Package`, Pilot LabelPrint và Review/hoàn thiện Framework v1 đã Completed trong phạm vi tương ứng. Package `1.0.0-rc.1` release-ready: Codex có Pilot evidence, còn ChatGPT, Cline và Claude là future-ready documented surfaces với limitation/fallback nhưng chưa validated. Structural remediation, independent diff review, Documentation Review và Release/Handover gate đã đạt. Trạng thái này chưa có nghĩa Git tag hoặc publish đã được thực hiện và không tự xác lập Decision hay thay đổi Accepted semantics.
+`Project Workspace Template Package`, `Standards và Checklists Package`, `AI Workflow và Prompt Template Package`, `Frontend Design Workflow và Impeccable Integration`, `Usage Guides Package`, Pilot LabelPrint và Review/hoàn thiện Framework v1 đã Completed trong phạm vi tương ứng. Package `1.0.0-rc.1` release-ready: Codex có Pilot evidence, còn ChatGPT, Cline và Claude là future-ready documented surfaces với limitation/fallback nhưng chưa validated. Structural remediation, independent diff review, Documentation Review và Release/Handover gate đã đạt. Git tag/publish là release action riêng, phải đối chiếu Git/GitHub release record và không tự xác lập Decision hay thay đổi Accepted semantics.
 
 ## Hướng mở rộng tùy chọn trong tương lai
 

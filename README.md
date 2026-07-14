@@ -5,7 +5,7 @@
 ## Trạng thái
 
 - Framework specification: `0.3` — Living architecture/specification.
-- Package candidate: `1.0.0-rc.1` — release-ready sau review/remediation gates; chưa tag hoặc publish và chưa phải stable release.
+- Package candidate: `1.0.0-rc.1` — release-ready sau review/remediation gates và chưa phải stable release; xem Git/GitHub release record để xác định trạng thái publish.
 - Documentation packages: đã hiện thực ở mức template và hướng dẫn.
 - Pilot project: đã hoàn thành trên LabelPrint trong phạm vi migration, documentation integration và technical restore/build baseline; cross-Agent, runtime, database và frontend evidence vẫn là limitation riêng.
 - Agent support của RC1: Codex đã có validation thực tế trong phạm vi Pilot LabelPrint; ChatGPT, Cline và Claude là future-ready documented surfaces, chưa được Framework validation thực tế.

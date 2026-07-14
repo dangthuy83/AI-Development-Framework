@@ -2,7 +2,7 @@
 
 ## Release status
 
-`1.0.0-rc.1` là Release Candidate đầu tiên của Documentation & Template Framework v1. Roadmap item 10 — Review và hoàn thiện Framework v1 — đã `Completed`; independent diff review, Documentation Review và Release/Handover gates đã đạt. RC1 release-ready nhưng chưa tag hoặc publish và chưa phải stable release `1.0.0`.
+`1.0.0-rc.1` là Release Candidate đầu tiên của Documentation & Template Framework v1. Roadmap item 10 — Review và hoàn thiện Framework v1 — đã `Completed`; independent diff review, Documentation Review và Release/Handover gates đã đạt. RC1 release-ready và chưa phải stable release `1.0.0`; Git/GitHub release record là nguồn xác định trạng thái tag/publish.
 
 Không tag, GitHub Release hoặc publish action nào được suy ra từ tài liệu này. Các action đó cần release approval riêng sau khi Documentation Review và Release/Handover gates đạt.
 
