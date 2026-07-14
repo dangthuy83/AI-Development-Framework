@@ -1,5 +1,7 @@
 # Cách sử dụng Framework với ChatGPT
 
+> **RC1 evidence status:** Future-ready documented surface; chưa được Framework validation thực tế. Guide này ghi capability assumption, limitation và fallback để sử dụng trong tương lai, nhưng không phải bằng chứng ChatGPT đã validated hoặc equivalent với Codex.
+
 ## Chọn surface
 
 ChatGPT phù hợp với analysis, design, documentation, review và continuity bằng Project. ChatGPT Projects có thể nhóm chats, files và project instructions; tool availability, file limits, memory và sharing phụ thuộc plan/workspace hiện hành. Xem [Projects in ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) và [File Uploads FAQ](https://help.openai.com/en/articles/8555545-file-uploads-with-chatgpt-plus).

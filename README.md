@@ -4,10 +4,12 @@
 
 ## Trạng thái
 
-- Framework specification: `0.3` — đang thiết kế.
+- Framework specification: `0.3` — Living architecture/specification.
+- Package candidate: `1.0.0-rc.1` — release-ready sau review/remediation gates; chưa tag hoặc publish và chưa phải stable release.
 - Documentation packages: đã hiện thực ở mức template và hướng dẫn.
 - Pilot project: đã hoàn thành trên LabelPrint trong phạm vi migration, documentation integration và technical restore/build baseline; cross-Agent, runtime, database và frontend evidence vẫn là limitation riêng.
-- Framework v1: chưa được tuyên bố sẵn sàng phát hành.
+- Agent support của RC1: Codex đã có validation thực tế trong phạm vi Pilot LabelPrint; ChatGPT, Cline và Claude là future-ready documented surfaces, chưa được Framework validation thực tế.
+- Framework v1 stable: chưa được tuyên bố sẵn sàng phát hành.
 - Cập nhật trạng thái gần nhất: `2026-07-14`.
 
 Nguồn kiến trúc hiện hành là [FRAMEWORK_SPEC.md](FRAMEWORK_SPEC.md); lịch sử quyết định là [FRAMEWORK_DECISIONS.md](FRAMEWORK_DECISIONS.md). Roadmap hoặc README không thay thế Decision hay ACR.
@@ -91,6 +93,7 @@ Prompt Template là manual entry/composition aid. Nó không thay Intent Graph, 
 ```text
 AI-Development-Framework/
 ├── README.md                   # Entry point và Quick Start
+├── RELEASE_NOTES.md            # RC scope, support status, migration và limitations
 ├── FRAMEWORK_SPEC.md           # Living architecture/specification SSOT
 ├── FRAMEWORK_DECISIONS.md      # Historical Decisions và ACR
 ├── global-workspace/

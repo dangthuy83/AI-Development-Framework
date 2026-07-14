@@ -1,5 +1,7 @@
 # Cách sử dụng Framework với Claude
 
+> **RC1 evidence status:** Claude Projects và Claude Code là future-ready documented surfaces; chưa được Framework validation thực tế. Guide này ghi capability assumption, limitation và fallback để sử dụng trong tương lai, nhưng không phải bằng chứng hai surface đã validated hoặc equivalent với Codex.
+
 ## Chọn Claude Project hay Claude Code
 
 - **Claude Projects:** phù hợp analysis, design, documentation và continuity qua project knowledge/instructions. Project knowledge và instructions có thể dùng xuyên chats; context không mặc nhiên chia sẻ giữa chats nếu chưa nằm trong project knowledge. Xem [What are projects?](https://support.anthropic.com/en/articles/9517075-what-are-projects) và [Create and manage projects](https://support.anthropic.com/en/articles/9519177-how-can-i-create-and-manage-projects).

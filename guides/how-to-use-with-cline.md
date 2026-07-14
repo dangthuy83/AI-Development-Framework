@@ -1,5 +1,7 @@
 # Cách sử dụng Framework với Cline
 
+> **RC1 evidence status:** Future-ready documented surface; chưa được Framework validation thực tế. Guide này ghi capability assumption, limitation và fallback để sử dụng trong tương lai, nhưng không phải bằng chứng Cline đã validated hoặc equivalent với Codex.
+
 ## Vai trò và nguồn capability
 
 Cline là coding-agent surface gắn với workspace/editor. Cline có thể nhận workspace rules và hỗ trợ `AGENTS.md`; checkpoints có thể lưu file snapshots, nhưng không thay Git, Project Workspace hoặc verification. Xem [Cline Rules](https://docs.cline.bot/customization/cline-rules) và [Checkpoints](https://docs.cline.bot/core-workflows/checkpoints).

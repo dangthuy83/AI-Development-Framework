@@ -5,8 +5,9 @@
 
 ## Trạng thái
 
-- Phiên bản: 0.3
-- Trạng thái: Đang thiết kế
+- Phiên bản đặc tả: 0.3
+- Phiên bản package candidate: 1.0.0-rc.1
+- Trạng thái: Roadmap item 10 — Completed; `1.0.0-rc.1` release-ready, chưa tag hoặc publish và chưa phải stable release
 - Ngôn ngữ tài liệu: Tiếng Việt
 
 ---
@@ -4087,7 +4088,7 @@ Documentation dry-run đã bao phủ initialize project có và không frontend;
 
 Standards Package và Checklists Package đã hoàn thành về thiết kế và nội dung, sẵn sàng tích hợp Project Workspace Template, làm dependency cho AI Workflow và Prompt Template Package, và sẵn sàng pilot có kiểm soát trong phạm vi Standards và Checklists. Package chưa tự làm toàn Framework sẵn sàng pilot hoặc phát hành.
 
-Các dependency của Standards Package gồm AI Workflows, Prompt Templates, Frontend Brief và Guides đã được đáp ứng bởi các Roadmap item Completed sau đó. Dependencies toàn Framework còn lại theo trạng thái hiện hành là cross-Agent validation, pilot project và Framework v1 review/release. Kết quả này là cập nhật Living Document triển khai F-024, không tạo Decision mới, không tạo F-025 và không thay F-003, F-004, F-013, ACR-003, F-023, F-024 hoặc Accepted Contract.
+Các dependency của Standards Package gồm AI Workflows, Prompt Templates, Frontend Brief và Guides đã được đáp ứng bởi các Roadmap item Completed sau đó. Tại thời điểm Standards Package hoàn tất, dependencies toàn Framework tiếp theo là cross-Agent validation, pilot project và Framework v1 review/release; trạng thái hiện hành được ghi tại section 13J và Roadmap item 10. Kết quả này là cập nhật Living Document triển khai F-024, không tạo Decision mới, không tạo F-025 và không thay F-003, F-004, F-013, ACR-003, F-023, F-024 hoặc Accepted Contract.
 
 ---
 
@@ -4117,7 +4118,7 @@ Scenario dry-run đã bao phủ initialize không frontend, initialize có front
 
 AI Workflow Package và Prompt Template Package hoàn thành về thiết kế và nội dung; Frontend Brief hoàn thành; package tích hợp Standards, Checklists và sẵn sàng tích hợp Project Workspace Template. Package sẵn sàng cho Usage Guides và pilot có kiểm soát trong phạm vi Workflows/Prompt Templates, nhưng chưa tự chứng minh toàn Framework sẵn sàng pilot hoặc phát hành.
 
-Dependency Usage Guides cho ChatGPT, Codex, Cline và Claude đã được đáp ứng bởi Roadmap item Completed sau đó. Dependencies toàn Framework còn lại là cross-Agent validation, pilot project, feedback classification và Framework v1 review/release. Đây là cập nhật Living Document và Roadmap status phản ánh implementation đã kiểm chứng; không tạo Decision, ACR hoặc F-025 và không thay F-003, F-004, F-013, F-015 đến F-020, F-022, F-024, ACR-003 hoặc Accepted Contract.
+Dependency Usage Guides cho ChatGPT, Codex, Cline và Claude đã được đáp ứng bởi Roadmap item Completed sau đó. Tại thời điểm AI Workflow và Prompt Template Package hoàn tất, dependencies toàn Framework tiếp theo là cross-Agent validation, pilot project, feedback classification và Framework v1 review/release; trạng thái hiện hành được ghi tại section 13J và Roadmap item 10. Đây là cập nhật Living Document và Roadmap status phản ánh implementation đã kiểm chứng; không tạo Decision, ACR hoặc F-025 và không thay F-003, F-004, F-013, F-015 đến F-020, F-022, F-024, ACR-003 hoặc Accepted Contract.
 
 ---
 
@@ -4146,7 +4147,7 @@ Dry-run đã bao phủ người không chuyên Dev bắt đầu project; continu
 
 Usage Guides Package hoàn thành về thiết kế và nội dung, tích hợp Project Workspace Template, Global Standards, Workflows, Prompt Templates và Checklists. Impeccable Usage Guide hoàn tất mảnh guide còn lại của Frontend Design và Impeccable conditional package; hai Roadmap item tương ứng đủ căn cứ chuyển sang `Completed` trong phạm vi package.
 
-Package sẵn sàng cho cross-Agent validation và pilot có kiểm soát, nhưng documentation dry-run không thay kiểm thử thực tế trên mọi Agent/surface và không tự tuyên bố toàn Framework sẵn sàng pilot hoặc phát hành. Dependency Root README/Quick Start đã được đáp ứng bởi implementation Completed sau đó. Dependencies toàn Framework còn lại là cross-Agent validation thực tế, pilot project, feedback classification, package version/release note và Framework v1 review/release. Đây là Living Document implementation/status update; không tạo Decision, ACR hoặc F-025 và không thay F-024, ACR-003 hay Accepted Contract.
+Package sẵn sàng cho cross-Agent validation và pilot có kiểm soát, nhưng documentation dry-run không thay kiểm thử thực tế trên mọi Agent/surface và không tự tuyên bố toàn Framework sẵn sàng pilot hoặc phát hành. Dependency Root README/Quick Start đã được đáp ứng bởi implementation Completed sau đó. Tại thời điểm Usage Guides Package hoàn tất, dependencies toàn Framework tiếp theo là cross-Agent validation thực tế hoặc limitation/fallback evidence, pilot project, feedback classification, package version/release note và Framework v1 review/release; trạng thái hiện hành được ghi tại section 13J và Roadmap item 10. Đây là Living Document implementation/status update; không tạo Decision, ACR hoặc F-025 và không thay F-024, ACR-003 hay Accepted Contract.
 
 ---
 
@@ -4160,7 +4161,7 @@ README chỉ sở hữu navigation, onboarding và trạng thái khái quát; kh
 
 ## 13I.2 Full-package Consistency Review
 
-Review toàn package xác nhận manifest hiện hành gồm Root README, hai Framework SSOT, bảy Standards, sáu Workflows, mười hai Template files gồm Frontend Brief và mười một Prompt Templates, mười Checklists, chín Project Workspace Templates và tám Usage Guides. Không tạo `skills/` vì chưa có skill deliverable thực tế.
+Review toàn package xác nhận core manifest gồm Root README, hai Framework SSOT, bảy Standards, sáu Workflows, mười hai Template files gồm Frontend Brief và mười một Prompt Templates, mười Checklists, chín Project Workspace Templates và tám Usage Guides. RC1 bổ sung root `RELEASE_NOTES.md` làm release artifact ghi version, support status, migration và known limitations; file này không bổ sung Project Workspace file bắt buộc hoặc thay đổi F-024 deliverable ownership. Không tạo `skills/` vì chưa có skill deliverable thực tế.
 
 Structural validation xác nhận không file Markdown rỗng, conflict marker, Markdown fence lỗi hoặc broken internal link; đúng filename/count theo F-003 và F-024; không có F-025 hoặc executable component ngoài phạm vi. Cross-file semantic review xác nhận terminology, status, ownership, applicability, dependency, permission/approval, evidence, untrusted input, Impeccable fallback, Agent independence và technology neutrality nhất quán.
 
@@ -4170,7 +4171,7 @@ Documentation dry-run xác nhận người không chuyên Dev có thể đi từ
 
 Root Guide hoàn thành về thiết kế và nội dung. Required documentation deliverables đã có mặt ở mức package và full-package consistency review đạt. Framework sẵn sàng chuyển sang cross-Agent validation thực tế và pilot có kiểm soát, nhưng toàn Framework chưa được tuyên bố pilot-complete hoặc release-ready.
 
-Dependencies còn lại: kiểm thử Prompt Templates và Usage Guides trên ChatGPT, Codex, Cline và Claude hoặc ghi limitation/fallback thực tế; pilot một project cá nhân; phân loại feedback; xác định package version/release note; Documentation Review, Release/Handover và Framework v1 review. Đây là Living Document implementation update; không tạo Decision, ACR hoặc F-025 và không thay ACR-003, F-024 hay Accepted Contract.
+Tại thời điểm hoàn tất Root Guide, dependencies tiếp theo gồm cross-Agent validation hoặc limitation/fallback evidence, pilot, feedback classification, package version/release note và Framework v1 review gates. Pilot, feedback classification, RC1 version/release note và limitation/fallback evidence sau đó đã được đáp ứng; trạng thái hiện hành và các gate còn lại được ghi tại section 13J và Roadmap item 10. Đây là Living Document implementation update; không tạo Decision, ACR hoặc F-025 và không thay ACR-003, F-024 hay Accepted Contract.
 
 ---
 
@@ -4198,7 +4199,9 @@ Independent validation xác nhận 9/9 files, ownership, internal links/anchors,
 
 Roadmap item Pilot áp dụng Framework cho một dự án cá nhân đủ evidence chuyển sang `Completed`. Completion này chứng minh migration và documentation workflow hoạt động trên một project thật với legacy knowledge, security boundary, submodule dependency và technical restore/build baseline.
 
-Pilot không tự chứng minh cross-Agent equivalence, runtime/database behavior, frontend Visual QA hoặc Framework v1 release readiness. Dependencies còn lại cho Framework v1 gồm cross-Agent validation hoặc limitation/fallback evidence trên ChatGPT, Cline và Claude; package version/release note; Documentation Review; Release/Handover Checklist và Roadmap item Review và hoàn thiện Framework v1.
+Pilot không tự chứng minh cross-Agent equivalence, runtime/database behavior, frontend Visual QA hoặc Framework v1 release readiness. Package version/release note và limitation/fallback evidence cho ChatGPT, Cline và Claude đã được xác định cho RC1. Independent diff review, Documentation Review và Release/Handover Checklist đã đạt; Roadmap item Review và hoàn thiện Framework v1 đã hoàn tất. Kết quả xác nhận `1.0.0-rc.1` release-ready nhưng không tự cấp quyền hoặc tuyên bố Git tag/publish đã thực hiện.
+
+Release Candidate `1.0.0-rc.1` xác định Codex là Agent surface đã có validation thực tế trong phạm vi Pilot LabelPrint. ChatGPT, Cline và Claude được giữ như future-ready documented surfaces: Guides mô tả capability, limitation và fallback để có thể áp dụng trong tương lai, nhưng các surface này chưa được Framework validation thực tế và không được gọi là validated hoặc equivalent trong RC1. Trạng thái này đáp ứng nhánh limitation/fallback của F-024 mà không biến cross-Agent testing thành release dependency của RC1.
 
 Đây là Living Document implementation/status update và feedback classification. Nội dung không tạo Decision, ACR hoặc F-025; không thay ACR-003, F-024 hoặc Accepted Contract.
 
@@ -4997,9 +5000,9 @@ Roadmap này quản lý việc hoàn thiện Documentation & Template Framework.
 | 7 | Frontend Design Workflow và Impeccable Integration | Completed |
 | 8 | Hướng dẫn sử dụng Framework với ChatGPT, Codex, Cline và Claude | Completed |
 | 9 | Pilot áp dụng Framework cho một dự án cá nhân | Completed |
-| 10 | Review và hoàn thiện Framework v1 | Proposed |
+| 10 | Review và hoàn thiện Framework v1 | Completed |
 
-`Project Workspace Template Package`, `Standards và Checklists Package`, `AI Workflow và Prompt Template Package`, `Frontend Design Workflow và Impeccable Integration`, `Usage Guides Package` và Pilot LabelPrint đã Completed trong phạm vi tương ứng. Hạng mục tiếp theo là Review và hoàn thiện Framework v1, bao gồm cross-Agent validation hoặc limitation/fallback evidence, package version/release note, Documentation Review và Release/Handover gate. Roadmap status không tự xác lập thêm Decision, thay đổi Accepted semantics hoặc tuyên bố Framework đã release-ready.
+`Project Workspace Template Package`, `Standards và Checklists Package`, `AI Workflow và Prompt Template Package`, `Frontend Design Workflow và Impeccable Integration`, `Usage Guides Package`, Pilot LabelPrint và Review/hoàn thiện Framework v1 đã Completed trong phạm vi tương ứng. Package `1.0.0-rc.1` release-ready: Codex có Pilot evidence, còn ChatGPT, Cline và Claude là future-ready documented surfaces với limitation/fallback nhưng chưa validated. Structural remediation, independent diff review, Documentation Review và Release/Handover gate đã đạt. Trạng thái này chưa có nghĩa Git tag hoặc publish đã được thực hiện và không tự xác lập Decision hay thay đổi Accepted semantics.
 
 ## Hướng mở rộng tùy chọn trong tương lai
 

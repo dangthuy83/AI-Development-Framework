@@ -1,5 +1,7 @@
 # Cách sử dụng Framework với Codex
 
+> **RC1 evidence status:** Codex là Agent surface đã có Framework validation thực tế trong phạm vi Pilot LabelPrint. Evidence bao phủ migration, documentation integration, independent review và restore/build technical baseline; không chứng minh mọi Codex surface, runtime/database behavior hoặc frontend Visual QA.
+
 ## Vai trò và surface
 
 Codex phù hợp khi task cần đọc/sửa workspace, chạy command, review diff và thu verification evidence. Capability cụ thể phụ thuộc surface, sandbox, permissions, plugin/tool và policy của environment; không giả định mọi Codex session có cùng quyền. Tham khảo [Codex documentation](https://developers.openai.com/codex) và [Codex use cases](https://developers.openai.com/codex/use-cases).
