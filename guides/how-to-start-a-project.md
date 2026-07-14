@@ -13,6 +13,98 @@ Dùng cho project mới. Với project đã có code, tài liệu hoặc lịch 
 - Chọn Agent theo capability thực tế, không theo tên model. Nếu Agent không sửa file được, dùng chế độ manual copy/review.
 - Không đưa credential, token, personal data hoặc secret vào chat, prompt hay template.
 
+## Standard Codex New Project Runbook
+
+Runbook này dành cho người muốn Agent dẫn dắt việc khởi tạo mà không phải tự đọc hoặc tự ghép toàn bộ Standards, Workflow, Template và Checklist trước. Người dùng chỉ cung cấp facts tối thiểu và giữ authority đối với Product, Design, Decision, permission cùng các lựa chọn chưa xác định; Codex chịu trách nhiệm đọc Framework, lộ diện gaps và dừng tại approval gates.
+
+Chuẩn bị input ngắn:
+
+```text
+Project path: [PROJECT_PATH]
+Framework path: [FRAMEWORK_PATH]
+Project name: [NAME]
+Problem cần giải quyết: [PROBLEM hoặc chưa xác định]
+Primary users: [USERS hoặc chưa xác định]
+Có frontend: [có/không/chưa xác định]
+Technology stack: [đã xác định/chưa xác định + details]
+Project/Product/Design/Decision authority: [name/role]
+Documentation write permission: [chưa cấp/có trong exact scope]
+Technical command permission: [restore/build/run/test/database boundaries]
+```
+
+Copy prompt sau vào Codex đang mở tại root project:
+
+```text
+Khởi tạo project mới bằng AI Development Framework.
+
+Project path: [PROJECT_PATH]
+Framework path: [FRAMEWORK_PATH]
+
+Thông tin ban đầu:
+
+- Project name: [NAME]
+- Problem cần giải quyết: [PROBLEM hoặc chưa xác định]
+- Primary users: [USERS hoặc chưa xác định]
+- Có frontend: [có/không/chưa xác định]
+- Technology stack: [đã xác định/chưa xác định + details]
+- Project/Product/Design/Decision authority: [name/role]
+- Documentation write permission: [chưa cấp/có trong exact scope]
+- Technical command permission: [restore/build/run/test/database boundaries]
+
+Dùng Guided Start Mode. Không yêu cầu người dùng tự đọc hoặc tổng hợp toàn bộ
+Framework trước.
+
+PHASE 1 — Guided intake và initialization plan
+
+1. Xác minh project path, Git/filesystem state và Framework dependency.
+2. Đọc Start Project Guide, Start Project Prompt Template, AI Working,
+   Documentation, Knowledge Management và Security Standards, Session Workflow
+   cùng Start Project/Open Session Checklists.
+3. Không sửa file hoặc chạy technical command.
+4. Từ thông tin ban đầu, lập Session Contract, authority map, confirmed Product
+   facts, explicit gaps, proposed nine-file initialization plan, frontend
+   applicability và permission/approval gates.
+5. Không chọn stack, Product behavior, milestone, Decision hoặc command thay
+   owner.
+6. Chỉ hỏi những câu blocking chưa thể xác định từ input; hỏi theo nhóm ngắn,
+   không yêu cầu người dùng điền toàn bộ template.
+7. Dừng để owner review và phê duyệt exact files/actions.
+
+PHASE 2 — Project Workspace initialization
+
+Chỉ chạy sau direct explicit approval.
+
+1. Inventory lại target trước edit.
+2. Tạo hoặc hợp nhất đúng chín Project Workspace files: README.md, PRODUCT.md,
+   DESIGN.md, ROADMAP.md, DECISIONS.md, WORKING_CONTEXT.md, TASKS.md,
+   CHANGELOG.md và AGENTS.md.
+3. Chỉ điền confirmed facts có authority/provenance.
+4. Fact chưa quyết định phải ghi explicit gap; không dùng code, AI suggestion
+   hoặc preference để tự điền.
+5. DECISIONS.md không có Accepted Decision nếu chưa có authority.
+6. Commands phải là Verified, Unverified hoặc Not configured trung thực.
+7. Nếu có frontend, giữ Frontend sections và tách Impeccable policy khỏi
+   availability.
+8. Không tạo source code, dependency, database, runtime hoặc extra
+   documentation file nếu chưa có authorization riêng.
+9. Không stage, commit hoặc push.
+
+PHASE 3 — Initialization validation
+
+1. Xác minh 9/9 files, required sections và ownership.
+2. Kiểm tra links/anchors, tables/fences, empty files và conflict markers.
+3. Kiểm tra Product–Design–Decision boundary.
+4. Kiểm tra permission, secret và untrusted-input boundary.
+5. Chạy Start Project và Open Session Checklists bằng evidence thật.
+6. Báo completed, partial, blocked hoặc failed.
+7. Dừng với exact changed files, gaps và recommended next action.
+
+Technical baseline là session riêng. Không chạy restore/build/run/test/database
+trong initialization nếu chưa có permission rõ.
+```
+
+Runbook là entry guidance cho Codex, không thay [Start Project Prompt Template](../global-workspace/templates/prompts/start-project.md), Session Contract, upstream contracts hoặc owner authority. Project đơn giản vẫn có thể dùng các bước ngắn bên dưới mà không cần runbook đầy đủ.
+
 ## Các bước
 
 1. Sao chép đúng chín file từ [`project-template/`](../project-template/README.md) vào root project. Không thêm file bắt buộc mới.
