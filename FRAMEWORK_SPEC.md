@@ -4174,6 +4174,34 @@ Dependencies còn lại: kiểm thử Prompt Templates và Usage Guides trên Ch
 
 ---
 
+# 13J. Pilot Project Implementation — LabelPrint
+
+## 13J.1 Phạm vi và evidence
+
+Pilot áp dụng Framework đã hoàn thành trên project cá nhân LabelPrint bằng Codex. Project hiện hữu có source code, Git history, sáu legacy memory files, local ignored configuration, generated artifacts và database schema script có destructive boundary. Framework được gắn bằng Git submodule pin commit `804aea8d024b760ef853f1d5a182e5cc176d0990`.
+
+Pilot đã thực hiện discovery read-only, authority resolution, Migration Worksheet, documentation remediation, independent post-remediation validation và technical baseline verification. Kết quả tạo đủ chín Project Workspace files, hạ `MEMORY/` thành supporting/historical source, tách deployed application commit `f6432734ccc979dd6d8646debd6d0d54d1e2b24f` khỏi documentation-migration baseline `92fac6a21ae4f3f18739b06babb24925251bea2f`, và tích hợp documentation trên project commit `88542d440c5b9dfabbf875866025ba0d9f277c69` cùng technical-evidence update `8a3b49e`.
+
+Independent validation xác nhận 9/9 files, ownership, internal links/anchors, Markdown structure, Decision provenance, legacy-source boundary và sensitive-data redaction. Technical baseline tại exact project HEAD xác nhận `dotnet restore` và `dotnet build` thành công với 0 warning/0 error; sandbox write denial ban đầu được phân loại là environment limitation và approved retry ngoài sandbox đạt. Application, database, browser/render, physical print và automated test không được tuyên bố đã kiểm chứng.
+
+## 13J.2 Pilot feedback classification
+
+- Quy trình migration ban đầu quá dài và khó tái sử dụng được phân loại là Living Document usability issue. `guides/how-to-migrate-an-existing-project.md` đã bổ sung Standard Codex Migration Runbook ba phase với approval gates; đây không phải Prompt Template mới và không thay F-024.
+- `git diff` không hiển thị untracked files được phân loại là validation-procedure issue. Runbook yêu cầu filesystem inventory kết hợp `git status --short --untracked-files=all` trước changed-path conclusion.
+- `git submodule status` có thể lỗi trên một số Git-for-Windows environment được phân loại là tool/environment limitation. Fallback là đối chiếu `.gitmodules`, gitlink tại project HEAD và actual submodule HEAD, không tự fetch remote latest.
+- Build bị sandbox từ chối ghi generated cache trong lần đầu được phân loại là environment permission limitation; approval/fallback hiện hành hoạt động và không làm thay Accepted Criteria hoặc Coding Standards.
+- Product goals, non-goals, milestone, active task, Runtime Compilation policy, test strategy và live database parity còn là project-specific gaps; chúng không phải Framework defect và không bị Framework tự điền.
+
+## 13J.3 Trạng thái và limitations
+
+Roadmap item Pilot áp dụng Framework cho một dự án cá nhân đủ evidence chuyển sang `Completed`. Completion này chứng minh migration và documentation workflow hoạt động trên một project thật với legacy knowledge, security boundary, submodule dependency và technical restore/build baseline.
+
+Pilot không tự chứng minh cross-Agent equivalence, runtime/database behavior, frontend Visual QA hoặc Framework v1 release readiness. Dependencies còn lại cho Framework v1 gồm cross-Agent validation hoặc limitation/fallback evidence trên ChatGPT, Cline và Claude; package version/release note; Documentation Review; Release/Handover Checklist và Roadmap item Review và hoàn thiện Framework v1.
+
+Đây là Living Document implementation/status update và feedback classification. Nội dung không tạo Decision, ACR hoặc F-025; không thay ACR-003, F-024 hoặc Accepted Contract.
+
+---
+
 # 14. Builder Specification
 
 > **Trạng thái phạm vi sau ACR-003:** Hướng mở rộng tùy chọn trong tương lai. Phần này được giữ để phản ánh F-023 và bảo toàn khả năng truy vết. Builder Specification không thuộc critical path, không phải điều kiện hoàn thành Framework v1 và không tự cấp quyền bắt đầu coding.
@@ -4966,10 +4994,10 @@ Roadmap này quản lý việc hoàn thiện Documentation & Template Framework.
 | 6 | AI Workflow và Prompt Template Package | Completed |
 | 7 | Frontend Design Workflow và Impeccable Integration | Completed |
 | 8 | Hướng dẫn sử dụng Framework với ChatGPT, Codex, Cline và Claude | Completed |
-| 9 | Pilot áp dụng Framework cho một dự án cá nhân | Proposed |
+| 9 | Pilot áp dụng Framework cho một dự án cá nhân | Completed |
 | 10 | Review và hoàn thiện Framework v1 | Proposed |
 
-`Project Workspace Template Package`, `Standards và Checklists Package`, `AI Workflow và Prompt Template Package`, `Frontend Design Workflow và Impeccable Integration` cùng `Usage Guides Package` đã Completed trong phạm vi tương ứng sau structural validation, cross-file semantic validation và documentation dry-run. Hạng mục tiếp theo là cross-Agent validation và Pilot áp dụng Framework; Roadmap status không tự xác lập thêm Decision, thay đổi Accepted semantics hoặc tuyên bố toàn Framework đã sẵn sàng pilot.
+`Project Workspace Template Package`, `Standards và Checklists Package`, `AI Workflow và Prompt Template Package`, `Frontend Design Workflow và Impeccable Integration`, `Usage Guides Package` và Pilot LabelPrint đã Completed trong phạm vi tương ứng. Hạng mục tiếp theo là Review và hoàn thiện Framework v1, bao gồm cross-Agent validation hoặc limitation/fallback evidence, package version/release note, Documentation Review và Release/Handover gate. Roadmap status không tự xác lập thêm Decision, thay đổi Accepted semantics hoặc tuyên bố Framework đã release-ready.
 
 ## Hướng mở rộng tùy chọn trong tương lai
 

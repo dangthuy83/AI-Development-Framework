@@ -42,7 +42,9 @@ theo ba phase và bắt buộc dừng tại mỗi approval gate.
 PHASE 1 — Discovery read-only
 
 1. Kiểm kê filesystem, Git/submodule, documents, legacy memory/instructions,
-   source, configuration, tests và evidence.
+   source, configuration, tests và evidence. Dùng cả filesystem inventory và
+   `git status --short --untracked-files=all`; `git diff` không hiển thị file
+   untracked nên không được dùng một mình để kết luận changed-path scope.
 2. Đọc migration guide, Agent guide, Documentation/Knowledge Management/
    AI Working/Security Standards và chín Project Workspace templates.
 3. Không sửa file; không fetch/update dependency; không chạy build, app,
@@ -74,7 +76,9 @@ PHASE 3 — Independent post-remediation validation
 Ưu tiên session Codex mới và read-only.
 
 1. Không mặc nhiên tin remediation report; xác minh filesystem, Git/diff và
-   submodule/dependency pin thực tế.
+   submodule/dependency pin thực tế. Nếu `git submodule status` lỗi do tool hoặc
+   environment, đối chiếu `.gitmodules`, gitlink tại project HEAD và actual
+   submodule HEAD bằng read-only Git commands; báo limitation thay vì giả định.
 2. Kiểm tra 9/9 files, required sections, ownership, links/anchors, provenance,
    legacy-source boundary, security và unsupported completion claims.
 3. Chạy Start Project, Open Session và Documentation Review Checklists bằng

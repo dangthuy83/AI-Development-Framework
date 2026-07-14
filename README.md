@@ -6,9 +6,9 @@
 
 - Framework specification: `0.3` — đang thiết kế.
 - Documentation packages: đã hiện thực ở mức template và hướng dẫn.
-- Pilot project: chưa thực hiện.
+- Pilot project: đã hoàn thành trên LabelPrint trong phạm vi migration, documentation integration và technical restore/build baseline; cross-Agent, runtime, database và frontend evidence vẫn là limitation riêng.
 - Framework v1: chưa được tuyên bố sẵn sàng phát hành.
-- Cập nhật trạng thái gần nhất: `2026-07-11`.
+- Cập nhật trạng thái gần nhất: `2026-07-14`.
 
 Nguồn kiến trúc hiện hành là [FRAMEWORK_SPEC.md](FRAMEWORK_SPEC.md); lịch sử quyết định là [FRAMEWORK_DECISIONS.md](FRAMEWORK_DECISIONS.md). Roadmap hoặc README không thay thế Decision hay ACR.
 
